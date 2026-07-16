@@ -1,0 +1,19 @@
+Thông số kỹ thuật,Ký hiệu,Đơn vị,TIA/EIA-568-C.3,TIA-568-3-E,ISO/IEC 11801,Ghi chú
+Hệ số suy hao @1310nm,Attenuation Coeff.,dB/km,≤ 0.40,≤ 0.36,≤ 0.38,Single-mode OS2 - TIA-568-3-E nghiêm ngặt nhất
+Hệ số suy hao @1550nm,Attenuation Coeff.,dB/km,≤ 0.35,≤ 0.31,≤ 0.34,Single-mode OS2 - TIA-568-3-E nghiêm ngặt nhất
+Suy hao đầu nối (Connector IL),Connector IL,dB/connector,≤ 0.75,≤ 0.75,≤ 0.75,Giới hạn cho mặt cắt cơ khí - Ba tiêu chuẩn bằng nhau
+Suy hao mối hàn (Splice Loss),Splice IL,dB/splice,≤ 0.3,≤ 0.3,≤ 0.3,Giới hạn cho mối hàn quang học - Ba tiêu chuẩn bằng nhau
+Suy hao mối hàn cơ khí,Mech. Splice IL,dB/splice,≤ 0.75,≤ 0.75,≤ 0.75,Dùng trong backbone chính - Ba tiêu chuẩn bằng nhau
+Optical Return Loss (UPC),ORL (UPC),dB,≥ 26,≥ 26,≥ 26,Ultra Physical Contact - Ba tiêu chuẩn bằng nhau
+Optical Return Loss (APC),ORL (APC),dB,≥ 55-60,≥ 55-60,≥ 55-60,Angled Physical Contact - Ba tiêu chuẩn bằng nhau
+Reflectance tổng điểm nối (UPC),Reflectance (UPC),dB,≤ -35,≤ -35,≤ -35,UPC - Ba tiêu chuẩn bằng nhau
+Reflectance tổng điểm nối (APC),Reflectance (APC),dB,≤ -60,≤ -60,≤ -60,APC - Ba tiêu chuẩn bằng nhau
+Suy hao Test Reference Cord,TRC Loss,dB,≤ 0.20 (singlemode),≤ 0.20 (singlemode),≤ 0.20 (singlemode),ISO/IEC 14763-3 quy định - Ba tiêu chuẩn bằng nhau
+Chiều dài tối đa,Length,m / km,Theo ứng dụng mạng,Theo ứng dụng mạng,Theo ứng dụng mạng,VD: 10GBASE-LR ≤ 10km
+Băng thông - Chromatic Dispersion,CD,ps/nm,Tùy theo loại sơi,Tùy theo loại sơi,Tùy theo loại sơi,Tiêu chuẩn quốc tế ITU-T G.652
+Tính bền cơ học,Tensile Strength,MPa,≥ 0.5,≥ 0.5,≥ 0.5,Ba tiêu chuẩn bằng nhau
+Hệ số co dãn nhiệt,Linear Expansion,ppm/°C,-0.5 đến 0.0,-0.5 đến 0.0,-0.5 đến 0.0,Ba tiêu chuẩn bằng nhau
+Chỉ số khúc xạ,Refractive Index,N/A,~1.4682,~1.4682,~1.4682,Các tiêu chuẩn tương tự nhau
+Đường kính lõi sợi,Core Diameter,μm,8-9 (singlemode),8-9 (singlemode),8-9 (singlemode),Single-mode fiber - Ba tiêu chuẩn bằng nhau
+Đường kính áo sợi,Cladding Diameter,μm,125 ± 2,125 ± 2,125 ± 2,Quanh lõi sợi - Ba tiêu chuẩn bằng nhau
+Công suất tiêu tán,Power Consumption,W,Tiêu chuẩn không quy định,Tiêu chuẩn không quy định,Tiêu chuẩn không quy định,Phụ thuộc thiết bị đầu cuối
