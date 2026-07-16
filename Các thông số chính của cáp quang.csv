@@ -1,0 +1,16 @@
+STT,Tên Thông Số,Giá Trị,Đơn Vị,Ghi Chú
+1,Đường kính lõi,9-10,μm,Cáp quang đơn mode
+2,Đường kính áo,125,μm,Đã được chuẩn hóa
+3,Aperture Số (NA),0.13-0.14,,Xác định góc thu nhận ánh sáng
+4,Suy hao (Attenuation),0.2-0.35,dB/km,Tại bước sóng 1550nm
+5,Phân tán (Dispersion),16-17,ps/nm/km,Tại bước sóng 1550nm
+6,Bước sóng hoạt động,1310-1550,nm,Phạm vi hoạt động chính
+7,Độ uốn tối thiểu,30,mm,Tính từ tâm lõi
+8,Độ bền kéo tối đa,200,MPa,Lực kéo tối đa
+9,Nhiệt độ hoạt động,-40 đến 70,°C,Phạm vi nhiệt độ
+10,Loại cáp,Single Mode (SM),,,Cáp quang đơn mode hay đa mode
+11,Chuẩn,ITU-T G.652,,,Chuẩn quốc tế
+12,Độ dài cáp,Tuỳ chỉnh,km,Tùy theo yêu cầu ứng dụng
+13,Đầu nối,FC/APC hoặc LC/APC,,Các loại đầu nối phổ biến
+14,Cấu trúc áo bảo vệ,Nylon hoặc Steel,,Bảo vệ cáp quang
+15,Tốc độ truyền dữ liệu,Có thể lên đến Tbps,bit/s,Tùy theo thiết bị
