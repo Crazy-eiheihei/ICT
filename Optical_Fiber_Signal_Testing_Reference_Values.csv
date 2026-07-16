@@ -1,0 +1,232 @@
+OPTICAL FIBER SIGNAL TESTING - REFERENCE VALUES & MEASUREMENT PARAMETERS
+Standards: TIA/EIA-568-C.3 & ISO/IEC 11801
+Date Created: 16/07/2026
+
+SECTION 1: OPTICAL POWER MEASUREMENT PARAMETERS
+Parameter,Unit,Standard Value,Acceptable Range,Test Wavelength,Remarks
+Optical Power Output (Transmitter),dBm,-5 to -20,Depends on transceiver,1310 nm / 1550 nm,Typical for single mode
+Optical Power Input (Receiver),dBm,-3 to -30,Within receiver sensitivity,1310 nm / 1550 nm,Must exceed receiver threshold
+Minimum Receiver Sensitivity,dBm,-38 to -42,Specified per transceiver,1310 nm / 1550 nm,Link must not exceed this loss
+Maximum Receiver Input,dBm,0 to 2,Must not exceed,1310 nm / 1550 nm,Prevents receiver saturation
+Optical Power Dynamic Range,dB,20-35,Tx to Rx range,1310 nm / 1550 nm,Margin for link performance
+Link Loss Budget,dB,Calculated,Based on design,1310 nm / 1550 nm,Tx power - Rx min sensitivity
+
+SECTION 2: OPTICAL ATTENUATION & LOSS MEASUREMENTS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Fiber Attenuation @ 1310 nm,dB/km,0.4,≤ 0.4,TIA/EIA-568-C.3 / ISO/IEC 11801,OS2 maximum limit
+Fiber Attenuation @ 1550 nm,dB/km,0.3,≤ 0.3,TIA/EIA-568-C.3 / ISO/IEC 11801,OS2 maximum limit
+Connector Loss (Mated Pair),dB,0.75,0.0 - 0.75,TIA/EIA-568-C.3 / ISO/IEC 11801,Each connection point
+Fusion Splice Loss,dB,0.3,0.0 - 0.3,TIA/EIA-568-C.3 / ISO/IEC 11801,Typical heatfusion splice
+Mechanical Splice Loss,dB,0.5,0.0 - 0.5,Reference Value,Not preferred for singlemode
+Optical Cable Loss (Total),dB,Calculated,(Link length × fiber attn.),Design specification,Calculate per link length
+Total Channel Loss,dB,Calculated,Fiber + connectors + splices,TIA/EIA-568-C.3,End-to-end insertion loss
+Link Insertion Loss @ 1310 nm,dB,Measured,≤ (2.5km × 0.4) + (4 × 0.75),TIA/EIA-568-C.3,Example: 2.5km link 4 connectors = max 4.6dB
+Link Insertion Loss @ 1550 nm,dB,Measured,≤ (2.5km × 0.3) + (4 × 0.75),TIA/EIA-568-C.3,Example: 2.5km link 4 connectors = max 4.35dB
+
+SECTION 3: OPTICAL SIGNAL-TO-NOISE RATIO (SNR) & QUALITY
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Bit Error Rate (BER),unitless,1×10^-12,≤ 1×10^-12,ITU-T G.957,Typical for single mode
+Signal-to-Noise Ratio (SNR),dB,> 20,≥ 15,Communication standard,Higher = better signal quality
+Optical Signal Quality (Q-factor),unitless,> 6,≥ 6,ITU-T G.957,Measure of signal integrity
+Extinction Ratio,dB,> 8.2,≥ 8.2,ITU-T G.957,Modulation quality indicator
+
+SECTION 4: OPTICAL SPECTRUM & WAVELENGTH MEASUREMENTS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Operating Wavelength @ 1310 nm,nm,1310,1304 - 1316,ITU-T G.652.D,Zero-dispersion wavelength
+Operating Wavelength @ 1550 nm,nm,1550,1544 - 1556,ITU-T G.652.D,Standard DWDM window
+Wavelength Accuracy,nm,±1,±1 to ±2,Test instrument spec,Depends on equipment
+Spectral Width @ -20dB,nm,0.1-5,Depends on light source,Laser specification,For coherent systems
+Wavelength Drift with Temperature,nm/°C,0.003-0.008,≤ 0.01,Component specification,Temperature coefficient
+
+SECTION 5: RETURN LOSS & REFLECTANCE MEASUREMENTS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Optical Return Loss (ORL),dB,-55,≥ -55,TIA/EIA-568-C.3,At live fiber end (PC polish)
+Optical Return Loss (APC),dB,-60,≥ -60,ISO/IEC 11801,Angled Polish Connector
+Reflectance @ Connector,dB,-55,≥ -55,TIA/EIA-568-C.3,Typical for singlemode connector
+Reflectance @ Fusion Splice,dB,-65,≥ -65,ISO/IEC 11801,Ideally > -70 dB
+Reflectance @ Mechanical Splice,dB,-45,≥ -45,Reference value,Lower quality than fusion
+Back Reflection (Rayleigh Scattering),dB,-85 to -90,More negative is better,ITU-T G.655,Fiber characteristic
+Fresnel Reflection @ Fiber End,dB,-14.5,Typical value,Physics,At air-glass interface
+
+SECTION 6: CHROMATIC DISPERSION & PMD (POLARIZATION MODE DISPERSION)
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Chromatic Dispersion @ 1310 nm,ps/(nm·km),3.5,≤ 3.5,ITU-T G.652.D,Dispersion at zero wavelength
+Chromatic Dispersion @ 1550 nm,ps/(nm·km),18,≤ 18,ITU-T G.652.D,Typical operating wavelength
+Chromatic Dispersion Slope,ps/(nm²·km),0.055-0.065,Specified by fiber type,ITU-T G.652.D,Rate of dispersion change
+Polarization Mode Dispersion (PMD),ps,< 2,≤ 2,ITU-T G.652.D,For 100 Gbps systems
+PMD Coefficient,ps/√km,< 0.2,≤ 0.2,ITU-T G.652.D,Max PMD per unit length
+
+SECTION 7: OPTICAL RECEIVER SENSITIVITY & PERFORMANCE
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Receiver Sensitivity @ 1310 nm,dBm,-38 to -42,Per transceiver spec,Component specification,Minimum detectable power
+Receiver Sensitivity @ 1550 nm,dBm,-38 to -42,Per transceiver spec,Component specification,Minimum detectable power
+Maximum Receiver Input Power,dBm,0 to 2,Per transceiver spec,Component specification,Saturates if exceeded
+Receiver Dynamic Range,dB,20-35,Per transceiver spec,Component specification,Sensitivity to max input
+Receiver Noise Figure,dB,4-6,Lower is better,Component specification,Optical preamplifier effect
+Receiver Jitter,ps,< 50,≤ 50,ITU-T G.957,Timing accuracy
+Data Recovery Performance,Hz,Within spec,Per transceiver,Component specification,Clock recovery quality
+
+SECTION 8: OPTICAL TRANSMITTER PARAMETERS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Transmitter Output Power @ 1310 nm,dBm,-5 to -15,Per transceiver spec,ITU-T G.957,Typical SFP transceiver
+Transmitter Output Power @ 1550 nm,dBm,-5 to -15,Per transceiver spec,ITU-T G.957,Typical SFP transceiver
+Transmitter Wavelength Stability,nm,±0.5,±0.5 to ±2,Component specification,Over operating temperature
+Transmitter Rise/Fall Time,ps,≤ 200,≤ 200-300,ITU-T G.957,Signal edge steepness
+Transmitter Extinction Ratio,dB,> 8.2,≥ 8.2,ITU-T G.957,Modulation depth
+Transmitter Output Jitter,ps,< 10,≤ 10-50,ITU-T G.957,Phase noise
+
+SECTION 9: WAVELENGTH DIVISION MULTIPLEXING (WDM) PARAMETERS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Channel Spacing (DWDM),GHz,50 or 100,Standard ITU-T grid,ITU-T G.694.1,Dense WDM spacing
+Channel Wavelength Accuracy,nm,±0.1,±0.1 to ±0.2,ITU-T G.694.1,Per channel stability
+Adjacent Channel Crosstalk,dB,-28,-30 to -28,ITU-T G.694.1,Channel separation quality
+WDM Filter Passband,nm,> 0.8,Depends on design,Component specification,For 50 GHz spacing
+Optical Signal-to-Noise Ratio (OSNR),dB,> 30,≥ 30 for 100Gbps,ITU-T G.959.1,In 0.1 nm bandwidth
+Channel Power Uniformity,dB,< 2,≤ 2 across channels,ITU-T G.694.1,Power level consistency
+
+SECTION 10: OPTICAL AMPLIFIER PARAMETERS (IF USED)
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+EDFA Gain Flatness,dB,±1,±0.5 to ±1.5,ITU-T G.662,Across C-band
+EDFA Output Power,dBm,+17 to +20,Per amplifier spec,Component specification,Multi-channel output
+EDFA Noise Figure,dB,< 5,≤ 5-6,ITU-T G.662,Lower is better for SNR
+EDFA Gain,dB,25-35,Configurable per link,Component specification,Compensates fiber loss
+EDFA Saturation Output Power,dBm,+20,Per amplifier spec,Component specification,Max stable output
+EDFA Pump Power,mW,200-500,Per amplifier type,Component specification,Laser pump energy
+
+SECTION 11: FIBER OPTIC CABLE MEASUREMENT PARAMETERS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Cable Outer Diameter,mm,10-14,±0.5,TIA/EIA-568-C.3,Typical single fiber cable
+Fiber Core Diameter,μm,8.6-9.5,Nominal 9,ITU-T G.652.D,Singlemode standard
+Fiber Cladding Diameter,μm,125,±1,ITU-T G.652.D,Industry standard
+Mode Field Diameter @ 1310 nm,μm,8.6-9.5,Specified range,ITU-T G.652.D,For connector compatibility
+Numerical Aperture (NA),unitless,0.13,Approximately,ITU-T G.652.D,Acceptance cone
+Bending Loss (macro-bend),dB,< 0.05,Minimal at 1 cm radius,Component specification,Avoid tight bends
+Bending Loss (micro-bend),dB,Negligible,Not visible,ITU-T G.652.D,Due to surface imperfections
+Tensile Strength,MPa,≥ 1000,Minimum rated,TIA/EIA-568-C.3,Cable breaking strength
+
+SECTION 12: ENVIRONMENTAL TEST CONDITIONS & TEMPERATURE EFFECTS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Ambient Temperature Range,°C,0 to 50,-10 to 60,TIA/EIA-568-C.3,Operating environment
+Storage Temperature Range,°C,-20 to 70,-40 to 85,TIA/EIA-568-C.3,Non-operating storage
+Relative Humidity,%, 10 to 90,≤ 95 RH,TIA/EIA-568-C.3,Test environment
+Attenuation Temperature Coefficient @ 1310 nm,dB/°C,0.003,≤ 0.005,ITU-T G.652.D,Per degree Celsius
+Attenuation Temperature Coefficient @ 1550 nm,dB/°C,0.002,≤ 0.003,ITU-T G.652.D,Per degree Celsius
+Wavelength Temperature Coefficient,nm/°C,0.003-0.008,≤ 0.01,Component specification,Typical laser source
+Dispersion Temperature Coefficient,ps/(nm·km·°C),0.002,Typically small,ITU-T G.652.D,Minor effect for singlemode
+
+SECTION 13: SIGNAL INTEGRITY & JITTER MEASUREMENTS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Total Jitter,ps,< 50,≤ 50-100,ITU-T G.957,RMS value across bit period
+Deterministic Jitter,ps,< 20,≤ 20,ITU-T G.957,Pattern-dependent jitter
+Random Jitter,ps,< 15,≤ 15,ITU-T G.957,Gaussian distribution
+Jitter Transfer Function,Depends on rate,Varies,-3dB at specific freq,Component specification,Frequency response
+Peak-to-Peak Jitter,ps,< 100,≤ 100-200,ITU-T G.957,Maximum observed deviation
+Phase Noise Power,dBc/Hz,< -90,At 10 kHz offset,Component specification,Spectral noise density
+
+SECTION 14: OPTICAL LOSS BUDGET CALCULATION (EXAMPLE)
+Link Component,Parameter,Value (dB),Remarks
+Transmitter Output Power,dBm,-5,Typical SFP power
+Connector Loss (TX side),dB,0.75,First connection
+Fiber Attenuation @ 2.5 km,dB,1.0,2.5 km × 0.4 dB/km @ 1310nm
+Connector Loss (Splice #1),dB,0.3,Fusion splice
+Connector Loss (Splice #2),dB,0.3,Fusion splice
+Connector Loss (RX side),dB,0.75,Last connection
+Total Link Loss,dB,3.1,Sum of all losses
+Receiver Sensitivity,dBm,-38,Minimum required power
+Link Margin,dB,29.9,Tx power - Total loss - Rx sensitivity
+Status,Result,PASS,29.9 dB > 3 dB safety margin
+
+SECTION 15: SIGNAL QUALITY METRICS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Optical Signal-to-Noise Ratio (OSNR),dB,> 30,≥ 30,ITU-T G.959.1,Per 0.1 nm for long haul
+Q-Factor (Quality Factor),unitless,> 6.0,≥ 6.0,ITU-T G.957,Amplitude margin
+Threshold Elevation,dB,< 3,≤ 3,ITU-T G.957,Power penalty due to dispersion
+Eye Opening (Vertical),mV,> 50,≥ 50 mV,Oscilloscope measurement,Signal amplitude quality
+Eye Opening (Horizontal),ps,> 50,≥ 50 ps,Oscilloscope measurement,Signal timing quality
+Eye Mask Compliance,unitless,Pass,100% within mask,ITU-T G.957,Eye diagram conformance
+
+SECTION 16: OPTICAL POWER METER CALIBRATION & ACCURACY
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Power Meter Accuracy,dB,±0.5,±0.3 to ±1.0,Component specification,Depends on meter quality
+Power Meter Resolution,dB,0.01,0.01 to 0.1,Component specification,Smallest detectable change
+Power Meter Linearity,%, > 99.9,Better than 99.5,Component specification,Across dynamic range
+Power Meter Calibration Interval,months,12,12-24,ISO/IEC 17025,Traceability requirement
+NIST Traceable Reference,Yes,Recommended,Optional for field testing,ISO/IEC 17025,For certified results
+Thermal Drift,dB/hour,< 0.1,Negligible after warm-up,Component specification,Stabilization time needed
+
+SECTION 17: CONNECTOR INSPECTION CRITERIA (SIGNAL PATH)
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Fiber End Gap (Air Gap),μm,< 5,Minimal contact,TIA/EIA-568-C.3,Affects return loss
+Fiber Alignment,μm,< 1.5,Core-to-core alignment,Component specification,Affects insertion loss
+Polish Quality,μm,Ra < 10,Smooth surface finish,Connector specification,Prevents surface scatter
+Contamination on Connector,Level,None visible,None under inspection,TIA/EIA-568-C.3,Cause of high loss
+Connector Endface Radius,μm,≈ 10-15,Curved surface (PC),Connector type,For proper coupling
+Connector Type,Format,PC or APC,SC/LC/FC standard,TIA/EIA-568-C.3,Affects reflectance
+
+SECTION 18: DATA RATE & MODULATION PARAMETERS
+Parameter,Unit,Standard Value,Acceptable Range,Standard Reference,Remarks
+Data Rate @ 1310 nm,Gbps,1 to 100,10/25/40/100 Gbps,ITU-T G.957,Depends on transceiver
+Data Rate @ 1550 nm,Gbps,1 to 400,10/25/40/100/200/400 Gbps,ITU-T G.957,DWDM multi-channel
+Modulation Format,Type,OOK or PAM-4,NRZ/PAM-4/QAM,ITU-T G.959.1,Intensity modulation
+Symbol Rate,Gbaud,Variable,Per data rate,Digital signaling,Symbol period determines BW
+Bandwidth Requirement,GHz,0.5 × data rate,Nyquist requirement,Communication theory,Optical spectrum needed
+Optical Modulation Amplitude,%, > 90,Min 90% depth,Component specification,Modulation quality
+
+SECTION 19: SYSTEM PERFORMANCE TARGETS (REFERENCE)
+Parameter,Unit,1310 nm,1550 nm,Standard Reference,Remarks
+Error-Free Transmission Distance,km,> 40,> 80,ITU-T G.957,Typical range
+Maximum Acceptable Loss,dB,20-30,30-40,System design,Including all margins
+Receiver Overload Margin,dB,> 3,> 3,TIA/EIA-568-C.3,Safety headroom
+Receiver Underload Margin,dB,> 3,> 3,TIA/EIA-568-C.3,Minimum signal threshold
+Temperature Stability,dB/°C,≤ 0.01,≤ 0.01,Component specification,Over 0-70°C range
+Humidity Stability,dB/(% RH),Negligible,Negligible,Component specification,Over 10-90% RH
+
+SECTION 20: PASS/FAIL ACCEPTANCE CRITERIA FOR SIGNAL TESTING
+Test Parameter,Measurement Unit,Minimum (dB),Maximum (dB),Standard Reference,Pass/Fail Logic
+Received Optical Power,dBm,-42,2,Component Spec,If value BETWEEN min & max = PASS
+Insertion Loss @ 1310 nm,dB,N/A,Calculated Max,TIA/EIA-568-C.3,If measured <= calculated max = PASS
+Insertion Loss @ 1550 nm,dB,N/A,Calculated Max,TIA/EIA-568-C.3,If measured <= calculated max = PASS
+Optical Return Loss,dB,-70,-55,TIA/EIA-568-C.3,If value <= -55 (more negative) = PASS
+Link Margin,dB,3,N/A,System Design,If margin >= 3 dB = PASS
+Fiber Attenuation @ 1310 nm,dB/km,N/A,0.4,ITU-T G.652.D,If measured <= 0.4 = PASS
+Fiber Attenuation @ 1550 nm,dB/km,N/A,0.3,ITU-T G.652.D,If measured <= 0.3 = PASS
+Connector Loss,dB,0,0.75,TIA/EIA-568-C.3,If measured <= 0.75 = PASS
+BER Performance,unitless,N/A,1×10^-12,ITU-T G.957,If BER <= 1×10^-12 = PASS
+
+SECTION 21: MEASUREMENT UNCERTAINTY & ERROR ANALYSIS
+Parameter,Unit,Uncertainty Value,Percentage,Remarks
+Power Meter Accuracy,dB,±0.5,±15% of typical loss,Industry standard
+Distance Measurement (OTDR),%, ±2 to 5,±2 to 5 of measured distance,Depends on OTDR calibration
+Wavelength Measurement,nm,±1,±0.1% at 1550nm,Optical spectrum analyzer
+Temperature Effect on Attenuation,dB,±0.005 per °C,Depends on fiber temp coeff,Environmental factor
+Connector Loss Variation,dB,±0.1,±13% of max loss,Mating cycle effects
+Overall System Uncertainty,dB,±1.0,±25% of typical loss,Combined measurement errors
+Safety Margin Required,dB,3,Minimum headroom,TIA/EIA-568-C.3
+
+SECTION 22: DOCUMENTATION & RECORD KEEPING
+Document Type,Information Required,Retention Period,Standard Reference
+Test Report,Date, time, operator, equipment S/N, all measurements,3-5 years,TIA/EIA-568-C.3
+Calibration Certificate,OTDR/meter calibration date, expiry, reference traceability,Until next calibration,ISO/IEC 17025
+Trace File (*.sor),OTDR waveform data for 1310 & 1550 nm,3-5 years,Field testing best practice
+Acceptance Report,Link ID, pass/fail status, signatures, deviations,Project lifetime,TIA/EIA-568-C.3
+Reference Standard Data,Baseline measurements for comparison analysis,Until system upgrade,Quality assurance
+
+SECTION 23: QUICK REFERENCE - OS2 FIBER TESTING SUMMARY
+Test Type,Wavelength (nm),Measured Parameter,Standard Limit,Pass Condition
+OTDR Trace,1310,Fiber Attenuation,≤ 0.4 dB/km,Trace slope <= limit
+OTDR Trace,1550,Fiber Attenuation,≤ 0.3 dB/km,Trace slope <= limit
+Event Analysis,1310,Connector Loss,≤ 0.75 dB,Each event within limit
+Event Analysis,1550,Connector Loss,≤ 0.75 dB,Each event within limit
+Event Analysis,1310,Splice Loss,≤ 0.3 dB,Each splice within limit
+Event Analysis,1550,Splice Loss,≤ 0.3 dB,Each splice within limit
+Reflectance Test,1310,Back Reflection,≥ -55 dB,More negative than -55 dB
+Reflectance Test,1550,Back Reflection,≥ -55 dB,More negative than -55 dB
+Power Meter Test,1310,Link Loss Budget,Calculated Max,Measured <= calculated
+Power Meter Test,1550,Link Loss Budget,Calculated Max,Measured <= calculated
+BER Test,1310,Bit Error Rate,≤ 1×10^-12,No errors in test window
+BER Test,1550,Bit Error Rate,≤ 1×10^-12,No errors in test window
+
+Notes: All reference values based on TIA/EIA-568-C.3 and ISO/IEC 11801 standards
+For specific equipment or system requirements, always consult transceiver datasheets and system design specifications
+Temperature and humidity should be recorded during all measurements for traceability
+Calibration certificates must be available for all measurement instruments
